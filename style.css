@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+/* Menu */
+nav{
+    background-color:  #FFF;
+    
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    
+}
+nav ul{
+    display: flex; 
+    height: 60px;
+    position: relative;
+    justify-content: end;
+    width: 74%;
+}
+nav ul li{
+    
+    padding: 20px 0 0 30px;
+    list-style: none;
+    
+}
+nav ul li.logo{
+    cursor:pointer;
+    position: absolute;
+    left:30%;
+    bottom: 1px;
+}
+nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Main */
+
+
+
+video{
+    position: relative;
+    background-size: contain;
+    filter: blur(4px);
+    
+    z-index: -100;
+    width: 100%;
+    height: 80%;
+}
+.borda .eu{
+    
+    
+    background: rgba(255, 253, 253, 0.2);
+}
+
+
+.container-nome h1{
+    display: block;
+    white-space: nowrap;
+    width:50%;
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 25px;
+    animation: digitando 3s steps(40), blink .4s infinite alternate;
+    border-right: 2px solid;
+}
+.container-nome a{
+    text-decoration: none;
+    display:block;
+    color: black;
+}
+button{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: 8px;
+    background-image:linear-gradient(45deg,rgba(128, 0, 128, 0.795), rgba(128, 0, 128, 0.674), blue); 
+    animation: colors 15s ease infinite;
+    background-size:400% 400%;
+    width: 34%;
+    font-size: 25px;
+}
+.container-nome{
+    border-radius: 8px;
+    right: 8%;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    font-weight: bold;
+    z-index: 1; 
+    width: 35%;
+    height: 200px;
+    margin: -35% 0 0 15%;  
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+
+}
+span{
+    color: black;
+}
+
+.textos-nomes{
+    /* stonks*/
+    position:relative; 
+    
+    top: 22%;
+}
+.primeira-tela .container-nome h1{
+     font-size: 50px;
+     text-align: center;
+     color: rgb(76, 0, 255);
+     font-weight:normal;
+     width:67%;
+}
+.segunda-parte{
+    margin: 27% 0 0 0;
+    width: 100%;
+    
+}
+.sobre{
+    position: relative;
+    color: #FFF;
+    width: 50%; 
+    padding: 5%;
+    margin-left: 5%;
+}
+.sobre h1{
+    text-align: center;
+}
+
+
+
+/* Inicio estilizção segunda div */
+
+.segunda-parte{
+    position: absolute;
+    top: 60%;
+    height: 100vh;
+}
+.segunda-parte .container{
+    background-image:linear-gradient(45deg,rgba(128, 0, 128, 0.795), rgba(128, 0, 128, 0.674), blue); /* começa no primeiro tom e vai pro ultimo na animação #75b9d4a0, #52a0bf,  #0295ca*/ 
+    width: 100%;
+    height: 100%;
+    animation: colors 15s ease infinite;
+    
+}
+.segunda-parte .boneco{
+    
+    margin: -60% 0 0 850px;
+}
+.segunda-parte .conteudo h2.text-intro{
+    text-indent: 3ch;
+    margin: 5% 0 0 0;
+    color: #FFF;
+}
+.segunda-parte .conteudo .sobre h2{
+    text-indent: 3ch;
+}
+
+
+
+@keyframes digitando{
+    from{
+        max-width: 0;
+    }to{
+        max-width:10em;
+    }
+}
+@keyframes blink{
+    40%{
+        border-color: rgba(0, 0, 0, 0.2)
+    } 
+}
+
+@keyframes colors{
+    0% {
+        background-position:0% 50%;
+
+    }
+    50% {
+        background-position:100% 50%;
+
+    }
+    100%{
+        background-position:50% 0%;
+
+    }
+
+}
+
+
+/*Estilização da Scroll Bar */
+
+::-webkit-scrollbar{
+    width:15px;
+    
+}
+
+/* fundo da barra*/
+/* ::-webkit-scrollbar-track{ 
+    background:rgba(128, 0, 128, 0.812);
+    border-radius:30px;
+} */
+::-webkit-scrollbar-thumb{ /* botão de rolagem */
+    background:rgba(0, 0, 255, 0.278);
+    border-radius:30px;
+}
+
+
+
+
+
+
