@@ -92,6 +92,9 @@ video{
     width: 34%;
     font-size: 25px;
 }
+.container-nome .textos-nomes button:hover{
+    animation: colors 2s ease infinite;
+}
 .container-nome{
     border-radius: 8px;
     right: 8%;
@@ -105,16 +108,13 @@ video{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
-
 }
-span{
+.textos-nomes span{
     color: black;
 }
-
 .textos-nomes{
     /* stonks*/
     position:relative; 
-    
     top: 22%;
 }
 .primeira-tela .container-nome h1{
@@ -128,14 +128,11 @@ span{
 
 
 
-
-
 /* Inicio estilizção segunda div */
-
 .segunda-parte{
     position: relative;
     margin: 21.5% 0;
-    height: 92vh;
+    height: 96vh;
 }
 .sobre{
     display: flex;
@@ -144,7 +141,7 @@ span{
     position: relative;
     top: 9%;
     width: 100%;
-    height: 80% ;
+    height: 80%;
 }
 .textos{
     text-overflow: clip;
@@ -155,7 +152,6 @@ span{
     color: #FFF;
     
 }
-
 .segunda-parte .container{
     background-image:linear-gradient(45deg,rgba(128, 0, 128, 0.795), rgba(128, 0, 128, 0.674), blue);
     background-size:400% 400%;
@@ -164,18 +160,15 @@ span{
     animation: colors 15s ease infinite;
     position:relative;
 }
-
 .sobre .boneco{
     position: absolute;
     height: 100%;
     margin: 0 0 0 60% ;
 }
-
 .segunda-parte .container .sobre .textos h2.text-intro{
     text-indent: 3ch; /* Parágrafo */
     margin: 5% 0 0 0;
 }
-
 .sobre h1{
     text-align: center;
     
@@ -215,71 +208,132 @@ span{
 }
 
 
-/*Estilização da Scroll Bar */
 
+/*Estilização da Scroll Bar */
 ::-webkit-scrollbar{
     width:15px;
     
 }
-
-/* fundo da barra*/
-/* ::-webkit-scrollbar-track{ 
-    background:rgba(128, 0, 128, 0.812);
-    border-radius:30px;
-} */
 ::-webkit-scrollbar-thumb{ /* botão de rolagem */
     background:rgba(0, 0, 255, 0.278);
     border-radius:30px;
 }
 
 
-/* Terceira Parte */
 
+/*         Terceira Parte          */
 .terceira-parte{
     display: block;
     position: absolute;
-    top: 200%;
+    top: 210%;
     width: 100%;
     background: violet;
     height: 100vh;
 }
 .terceira-parte .conteudo{
-    background-color: black;
+    background: black;
     display: flex;
-    margin: 6% 0 0 5%;
+    margin: 8% 0 0 5%;
     flex-wrap: wrap;
     position: relative;
     width: 90%;
     height: auto;
 }
-.terceira-parte .conteudo div{
-    
-    margin: 12% auto;
+
+
+/* Tamanho dos cards de projetos  */
+.terceira-parte .conteudo .conteudo-secao{
+    margin: 6% 0 6% 8.5%;
     width: 300px;
     height: 300px;
 }
-.terceira-parte .conteudo .projeto1{
+.terceira-parte .conteudo .projeto-1{
     background: blue;
 }
-.terceira-parte .conteudo .projeto2{
+.terceira-parte .conteudo .projeto-2{
     background: yellow;
 }
-.terceira-parte .conteudo .projeto3{
+.terceira-parte .conteudo .projeto-3{
     background: red;
 }
+.terceira-parte .conteudo .projeto-4{
+    background: lightcoral;
+}
+.terceira-parte .conteudo .projeto-5{
+    background: blueviolet;
+}
+.terceira-parte .conteudo .projeto-6{
+    background: orange;
+}
+/* Container que irá aparecer ao click no botão*/
+.container-segunda-secao{
+    transition: 1s all ease;
+    width: 100%;
+    flex-wrap: wrap;
+    display:none;
+}
 
-.projeto3 .botao-mais button{
-    background: none;
+
+/* Css do Botão de ativação */
+.conteudo .button{
     cursor: pointer;
     border: none;
-    margin: 30% 0 0 91.5%;
-
+    margin: 9% 0 0 20.4%;
+    position:absolute;
 }
-.projeto3 .botao-mais button ion-icon{
-    width: 50px;
-    height: 50px;
+.conteudo .button ion-icon{
+    width: 40px;
+    animation-name: transicao;
+    animation-duration: 1s;
     color: #FFF;
+    height: 40px;
 }
+.menos{
+    display:none;
+}
+/* Caixa do input */
+#checkbox{
+    display:none;
+}
+
+
+/* Parte de checar se o botão esta ativo */
+
+#checkbox:checked + .terceira-parte .conteudo .container-segunda-secao{
+    display: flex;
+    animation-name: transicao;
+    animation-duration: 2s;
+}
+
+#checkbox:checked + .terceira-parte .projeto-3 .button .menos{
+    animation-name: transicao;
+    animation-duration: 2s;
+    display:block;
+}
+#checkbox:checked + .terceira-parte .projeto-3 .button .circulo{
+    display:none;
+}
+#checkbox:checked + .terceira-parte {
+    height: 160vh;
+    transition: 1s all ease;
+}
+#checkbox:checked + .terceira-parte .conteudo {
+    
+    height: 100%;
+    transition: 1s all ease;
+    position:relative;
+    top:30%;
+    transform:translate(0%, -40%);
+}
+@keyframes transicao{
+    from{
+        
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 
 
 
