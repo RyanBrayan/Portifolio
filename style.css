@@ -5,8 +5,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    text-decoration:none;
 }
+
 html{
     scroll-behavior:smooth;
     overflow-x: hidden;
@@ -131,7 +132,7 @@ video{
 /* Inicio estilizção segunda div */
 .segunda-parte{
     position: relative;
-    margin: 21.5% 0;
+    margin: 21.5% 0 0 0;
     height: 96vh;
 }
 .sobre{
@@ -222,117 +223,17 @@ video{
 
 
 /*         Terceira Parte          */
-.terceira-parte{
-    display: block;
-    position: absolute;
-    top: 210%;
-    width: 100%;
-    background: violet;
-    height: 100vh;
-}
-.terceira-parte .conteudo{
-    background: black;
-    display: flex;
-    margin: 8% 0 0 5%;
-    flex-wrap: wrap;
-    position: relative;
-    width: 90%;
-    height: auto;
-}
 
 
-/* Tamanho dos cards de projetos  */
-.terceira-parte .conteudo .conteudo-secao{
-    margin: 6% 0 6% 8.5%;
-    width: 300px;
-    height: 300px;
-}
-.terceira-parte .conteudo .projeto-1{
-    background: blue;
-}
-.terceira-parte .conteudo .projeto-2{
-    background: yellow;
-}
-.terceira-parte .conteudo .projeto-3{
-    background: red;
-}
-.terceira-parte .conteudo .projeto-4{
-    background: lightcoral;
-}
-.terceira-parte .conteudo .projeto-5{
-    background: blueviolet;
-}
-.terceira-parte .conteudo .projeto-6{
-    background: orange;
-}
-/* Container que irá aparecer ao click no botão*/
-.container-segunda-secao{
-    transition: 1s all ease;
-    width: 100%;
-    flex-wrap: wrap;
-    display:none;
-}
 
 
-/* Css do Botão de ativação */
-.conteudo .button{
-    cursor: pointer;
-    border: none;
-    margin: 9% 0 0 20.4%;
-    position:absolute;
-}
-.conteudo .button ion-icon{
-    width: 40px;
-    animation-name: transicao;
-    animation-duration: 1s;
-    color: #FFF;
-    height: 40px;
-}
-.menos{
-    display:none;
-}
-/* Caixa do input */
-#checkbox{
-    display:none;
-}
 
 
-/* Parte de checar se o botão esta ativo */
 
-#checkbox:checked + .terceira-parte .conteudo .container-segunda-secao{
-    display: flex;
-    animation-name: transicao;
-    animation-duration: 2s;
-}
 
-#checkbox:checked + .terceira-parte .projeto-3 .button .menos{
-    animation-name: transicao;
-    animation-duration: 2s;
-    display:block;
-}
-#checkbox:checked + .terceira-parte .projeto-3 .button .circulo{
-    display:none;
-}
-#checkbox:checked + .terceira-parte {
-    height: 160vh;
-    transition: 1s all ease;
-}
-#checkbox:checked + .terceira-parte .conteudo {
-    
-    height: 100%;
-    transition: 1s all ease;
-    position:relative;
-    top:30%;
-    transform:translate(0%, -40%);
-}
-@keyframes transicao{
-    from{
-        
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
+
+
+
 
 
 

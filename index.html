@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilizacao_borda.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--Link do CDN Do FontAwesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style-card.css">
     <title>Meu portifólio</title>
 </head>
 <body>
@@ -29,7 +38,7 @@
                         </li>
 
                         <li>
-                            <a href="#terceira">Projetos</a>
+                            <a href="#eventos">Projetos</a>
                         </li>
 
                         <li>
@@ -95,54 +104,238 @@
                 
         </div>
     </div>
-    <input type="checkbox" id="checkbox">
-    <div class="terceira-parte" id="terceira">
-        
-        <div class="conteudo">
 
-            
-            
-            <div class="projeto-1 conteudo-secao">
+    
+    <section id="eventos" class="eventos animation-area">
 
-            </div>
-            
-            <div class="projeto-2 conteudo-secao">
 
-            </div>
-            <div class="projeto-3 conteudo-secao">
-                <label for="checkbox">
-                    <div class="button">
-                        <ion-icon class="circulo"  name="add-circle-outline"></ion-icon>
-                        <ion-icon  class="menos" name="remove-circle-outline"></ion-icon>
-                    </div>
-                    
-                </label>
-            </div>
-               
-            <div class="container-segunda-secao">
-                
-                
-                <div class="projeto-4 conteudo-secao">
-
-                </div>
-            
-            
-                <div class="projeto-5 conteudo-secao">
-
-                </div>
-            
-            
-                <div class="projeto-6 conteudo-secao">
-
-                </div>
-           
-            </div>
-           
-            
+        <!--Div de conteudo para a animação do Background-->
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-    </div>
+
+
+        <!--Seção com os cards do Portfólio-->
+        <div class="envelope-titulo">
+            <h1 class="titulo-eventos">Projetos</h1>
+        </div>
+
+          <div class="swiper mySwiper container">
+  
+              <div class="swiper-wrapper conteudo">
+  
+                  <div class="swiper-slide card card-0">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">Sobre mim</span>
+                              <span class="descricao">Site criado para fins educacionais. Feito durante minha trajetória no <a href="https://www.proa.org.br/" target="_blank"><strong>Instituto PROA!</strong></a> Mostra um pouco de quem eu sou e meus gostos.</span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            <a href="https://github.com/RyanBrayan/Sobre-mim" target="_blank"> <button class="saibaMais botao-0"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+
+
+                   <!--Slide 2-->
+                   
+                  <div class="swiper-slide card card-1">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">My Favorite Musics</span>
+                              <span class="descricao">Este site contém minhas músicas favoritas, mostrando um pouco mais do meu gosto musical. Desenvolvido durante o curso do <a href="https://www.proa.org.br/" target="_blank"><strong>Instituto PROA!</strong></a></span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            <a href="https://ryanbrayan.github.io/music/" target="_blank"> <button class="saibaMais botao-1"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+
+
+                  <!--Slide 3-->
+                  <div class="swiper-slide card card-2">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+  
+                           
+  
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">Landing page em react</span>
+                              <span class="descricao">Minha primeira página criada utilizando o Framework React JS. Página simples de preenchimento de formulário.</span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            
+                            <a href="https://ryanbrayan.github.io/formulario-react/" target="_blank"> <button class="saibaMais botao-2"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+
+                  <!--Slide 4-->
+                  <div class="swiper-slide card card-3">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+  
+                           
+  
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">Automação de live</span>
+                              <span class="descricao">Projeto utilizando Python que automatiza o processo de abertura de live nas plataformas Youtube e Facebook.</span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            <a href="https://github.com/RyanBrayan/automacao_live" target="_blank"> <button class="saibaMais botao-3"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+
+                  <!--Slide 5-->
+                  <div class="swiper-slide card card-4">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+  
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">Busca e envio de informações</span>
+                              <span class="descricao">Busca informações sobre noticias e temperatura e envia para um contato no WhatsApp. Projeto feito utilizando Python.</span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            
+                            <a href="https://github.com/RyanBrayan/informacoes-com-Python.git" target="_blank"> <button class="saibaMais botao-4"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+                  
+                  <!--Slide 6-->
+                  <div class="swiper-slide card card-5">
+  
+                      <div class="card-conteudo">
+  
+                          <div class="image">
+                              
+                          </div>
+  
+                        
+  
+                          
+  
+                          <div class="nome-lugar">
+                              <span class="nome">Palavras Aleatórias</span>
+                              <span class="descricao">Projeto feito com Python, que possui 100 palavras, mistura as letras deuma e você precisa advinhar qual é.</span>
+                          </div>
+  
+                          <div class="botoes-card">
+                            
+                            <a href="https://github.com/RyanBrayan/Jogo-de-advinhacao" target="_blank"> <button class="saibaMais botao-5"> <i class="fa-brands fa-github-square"></i></button></a>
+                          </div>
+  
+                          
+                      </div>
+  
+                  </div>
+
+
+
+                 
+
+      </section>
+
+      <div class="swiper-button-next"></div>
+  
+          <div class="swiper-button-prev"></div>
+  
+          <div class="swiper-pagination"></div>
 
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </html>

@@ -1,0 +1,324 @@
+/* CSS Da seção de Eventos */
+
+.eventos{
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.titulo-eventos{
+    position:absolute;
+    top:8%;
+    left:50%;
+    transform:translate(-50%);
+}
+
+.swiper{
+    width:950px;
+}
+
+.container{
+    position:absolute;
+    height:500px;
+    width:1070px;
+    display:flex;
+    align-items:center;
+}
+
+.swiper-pagination-bullet{
+    height:7px;
+    width:26px;
+    border-radius:25px;
+    background-color:black;
+    z-index:3000000;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    position:absolute;
+    top:260%;
+}
+.swiper-button-next{
+    left:87.5%;
+}
+.swiper-button-prev{
+    left:10%;
+}
+
+.swiper-pagination{
+    position:absolute;
+    top:300%;
+}
+
+section .card .image {
+    height: 140px;
+    width: 100%;
+    
+}
+
+section .card .image img {
+    height: 50%;
+    width: 100%;
+}
+.card {
+   border-radius:20px;
+   background-color:#fff;
+   position:relative;
+   margin: 20px 0;
+   user-select:none;
+   height:100%;
+}
+
+
+
+.card .card-conteudo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    top:15%;
+    z-index:100;
+    padding:10px;
+}
+
+.card .media-icons{
+    position:absolute;
+    top:0px;
+    right:13px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+
+.card .media-icons i{
+    margin-top:10px;
+    color:black;
+    opacity:1;
+    transition: all 0.3 ease;
+    cursor:pointer;
+}
+
+.card .media-icons i:hover{
+    font-weight:bolder;
+    color:purple;
+}
+
+.card .nome-lugar{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 20px;
+}
+
+.nome-lugar .nome{
+    font-size:20px;
+    font-weight:bold;
+    
+}
+
+.card .botoes-card{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    margin-top:20px;
+}
+.card .botoes-card button{
+    font-size:40px;
+    border:none;
+    padding:13px 20px ;
+    outline:none;
+    border-radius: 8px;
+    background-color:#e0e0e0;
+}
+
+.card .botoes-card button:hover{
+    transition: 0.5s all ease;
+    background-color:rgb(6, 4, 4);
+    color:white;
+    cursor:pointer;
+}
+
+
+/*Animação do Background da Terceira seção*/
+.animation-area {
+    background-image:linear-gradient(-45deg,rgba(128, 0, 128, 0.795), rgba(128, 0, 128, 0.674), blue);
+    background-size:400% 400%;
+    animation: colors 15s ease infinite;
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.396);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+	border-radius: 50%;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) scale(0);
+	}
+	100% {
+		transform: translateY(-800px) scale(2);
+		opacity: 0;
+	}
+}
+
+
+
+.card-0::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-size:100% 100%;
+    border-radius:10px 10px 0px 0px;
+    background-image: url('./img/projeto-0.png');
+    
+}
+.card-1::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-image: url('./img/projeto-1.png');
+    background-size:100% 100%;
+    border-radius:10px 10px 0px 0px;
+    
+}
+.card-2::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-image: url('./img/projeto-2.png');
+    background-size:100% 100%;
+    background-position:center center;
+    border-radius:10px 10px 0px 0px;
+    object-fit:cover;
+}
+.card-3::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-image: url('./img/projeto-3.png');
+    background-size:100% 100%;
+    border-radius:10px 10px 0px 0;
+}
+.card-4::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-image: url('./img/projeto-4.png');
+    background-size:100% 100%;
+    border-radius:10px 10px 0px 0px;
+}
+.card-5::before{
+    content: '';
+    position:absolute;
+    height:45%;
+    width:100%;
+    background-image: url('./img/projeto-5.png');
+    background-size:100% 100%;
+    border-radius:10px 10px 0px 0px;
+}
+
+
+span.descricao{
+    
+    padding: 10px 0 0 0;
+    line-height:23px;
+}
+/* Posicionamento dos botões*/
+.botao-0{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.botao-1{
+    position: absolute;
+    top: 93%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.botao-2{
+    position: absolute;
+    top: 98%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+
+.botao-3{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.botao-4{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.botao-5{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%,0);
+}
