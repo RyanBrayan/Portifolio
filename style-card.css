@@ -229,6 +229,14 @@ section .card .image img {
     background-image: url('./img/projeto-0.png');
     
 }
+/* .card-0:hover::before{
+    padding-right: 80px;
+    border-radius: 8px;
+    height:100%;
+    width:300%;
+    position: absolute;
+    z-index: 100000;
+} */
 .card-1::before{
     content: '';
     position:absolute;
@@ -277,13 +285,11 @@ section .card .image img {
     background-size:100% 100%;
     border-radius:10px 10px 0px 0px;
 }
-
-
 span.descricao{
     
-    padding: 10px 0 0 0;
     line-height:23px;
 }
+
 /* Posicionamento dos botões*/
 .botao-0{
     position: absolute;
