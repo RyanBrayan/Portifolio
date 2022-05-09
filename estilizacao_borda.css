@@ -1,9 +1,4 @@
-.borda-foto{
-    position:absolute;
-    top:15%;
-    left:65%;
-    z-index: 50;
-}
+
 
 a.borda{
     position: absolute;
@@ -105,7 +100,7 @@ a.borda span:nth-child(4){
     height:2px;
     position: fixed;
     top: 60px;
-    display: flex;
+    
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
