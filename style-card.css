@@ -32,24 +32,9 @@
     width:26px;
     border-radius:25px;
     background-color:black;
-    z-index:3000000;
+    z-index:30;
 }
 
-.swiper-button-next, .swiper-button-prev{
-    position:absolute;
-    top:260%;
-}
-.swiper-button-next{
-    left:87.5%;
-}
-.swiper-button-prev{
-    left:10%;
-}
-
-.swiper-pagination{
-    position:absolute;
-    top:300%;
-}
 
 section .card .image {
     height: 140px;
@@ -143,10 +128,11 @@ section .card .image img {
 
 
 /*Animação do Background da Terceira seção*/
-.animation-area {
+.terceira-parte {
     background-image:linear-gradient(-45deg,rgba(128, 0, 128, 0.795), rgba(128, 0, 128, 0.674), blue);
     background-size:400% 400%;
     animation: colors 15s ease infinite;
+    position: relative;
 	width: 100%;
 	height: 100vh;
 }
@@ -328,3 +314,4 @@ span.descricao{
     left:50%;
     transform:translate(-50%,0);
 }
+
