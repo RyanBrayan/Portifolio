@@ -1,0 +1,3 @@
+# Portifolio
+Projeto de portifólio online. Onde vai ter coisas relacionadas a mim, Como por exemplo uma seção sobre mim, projetos, minhas redes, como entrar em contato e muito mais...
+
